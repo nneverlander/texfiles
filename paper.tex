@@ -1,0 +1,238 @@
+\documentclass[a4paper]{article}
+\usepackage{MyDocumentSettings}
+
+\begin{document}
+\title{Document template for \LaTeX}
+\author{Adi Kancherla}
+\date{\today \\version 1}
+
+\maketitle
+
+\begin{abstract}
+This template is dedicated to organizing \LaTeX{} document and customizing it
+with packages. It has been created with a selection of some of our favorite
+packages. You can download this document, modify it and adopt to your own
+needs. HOW
+\end{abstract}
+
+
+%-----------------------------------------------------------------------------
+%  INTRODUCTION
+%-----------------------------------------------------------------------------
+\section{Introduction}\label{Sect:Introduction}
+This document is organized in the following way. All important syntax examples
+are grouped in this section. All remaining sections contain only our favorite
+placeholder text, see \cite{LoremIpsum_wiki}, and can be safely deleted. More
+detailed explanation can be found on
+\href{http://www.electronics.oulu.fi/latex/examples/example_4/index.html}{our
+page, example 4}.
+
+\begin{description}
+\item[Automating references.]
+The format of cross references can defined in one common place, for ex ample in
+the beginning of the \LaTeX{} document. However as you make more and more
+customizations the the beginning becomes overcrowded. Therefore we have grouped
+all the extra settings in a separate document
+\href{http://www.electronics.oulu.fi/latex/examples/example_4/example_4_pkg.html}{MydocumentsSetings.sty}.
+Now referring to figures is done like that: \figref{fig:my_figure} and to
+tables like that: \tblref{tab:my_table}.
+
+\item[Customizing Bibliography.]
+There exist many packages for customizing behavior of the bibliographical
+references. One good example is the \verb|cite| package. It creates compressed
+and sorted lists of numerical citations which look like that:
+\cite{Book:Candy_1992,Book:Crawford_1994,Book:Golomb_82}. This package is
+compatible with the IEEE transactions class.
+
+\item[Organizing figures.]
+In this document all figures are placed in a separate folder. The common path
+is defined in our style file. There are often many files involved in writing a
+a \LaTeX{} document. It is a good practice to group them into their own
+folders.
+
+\item[Scaling figures.]
+It is possible to scale all figures at once. Instead of giving figures absolute
+dimensions in inches or centimeters we can use a percentage of some value. This
+value and the way how the scaling is done is defined in
+\href{http://www.electronics.oulu.fi/latex/examples/example_4/example_4_pkg.html}{MydocumentsSetings.sty}.
+Example \figref{fig:my_figure}.
+
+\item[Typing formulas]
+We have defined short names for some of the most common font types used in the
+math mode in
+\href{http://www.electronics.oulu.fi/latex/examples/example_4/example_4_pkg.html}{MydocumentsSetings.sty}.
+Setting fronts in the math mode is needed when typing physical units or longer
+variable names. If you don't set the font, but just type $MHz$ in the math
+mode, \LaTeX{} treats each letter as an individual variable and places
+additional spaces between them. Study the difference between
+\equref{eq:bad_typeetting} and \equref{eq:good_typeetting}.
+
+\begin{eqnarray}
+f_{ref} &=& 500 \, MHz \label{eq:bad_typeetting}\\
+f_{\mi{ref}} &=& 500 \, \mr{MHz}\label{eq:good_typeetting}
+\end{eqnarray}
+\end{description}
+
+\begin{figure}[t] \centering
+\includegraphics[width=\fscale{0.57}]{myfigure}
+\caption{An example figure} \label{fig:my_figure}
+\end{figure}
+
+
+%-----------------------------------------------------------------------------
+%  SECTION _ _ _
+%-----------------------------------------------------------------------------
+\section{First Placeholder Section}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.
+
+\subsection{First Placeholder Subsection}
+Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+deserunt mollit anim id est laborum.
+
+\subsection{Second Placeholder Subsection}
+Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+deserunt mollit anim id est laborum.
+
+
+Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+deserunt mollit anim id est laborum.
+
+\begin{table}\label{tab:my_table}
+\renewcommand{\arraystretch}{1.3}
+\caption{Simple table} \label{table_example} \centering
+\begin{tabular}{c|c}
+    \hline
+    Heading One     &   Heading Two\\
+    \hline
+    \hline
+
+    Three   &   Four\\
+    \hline
+
+    Five    &   Six\\
+    \hline
+\end{tabular}
+\end{table}
+
+\subsection{Third Placeholder Subsection}
+Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+deserunt mollit anim id est laborum.
+
+
+%-----------------------------------------------------------------------------
+%  SECTION _ _ _
+%-----------------------------------------------------------------------------
+\section{Second Placeholder Section}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.
+
+\subsection{First Placeholder Subsection}
+Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+deserunt mollit anim id est laborum.
+
+\subsection{Second Placeholder Subsection}
+Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+deserunt mollit anim id est laborum.
+
+
+%-----------------------------------------------------------------------------
+%  CONCLUSIONS
+%-----------------------------------------------------------------------------
+\section{Conclusions}
+Conclusions here... Consectetur adipisicing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis
+aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.
+
+
+%-----------------------------------------------------------------------------
+%  BIBLIOGRAPHY
+%-----------------------------------------------------------------------------
+%\pagebreak
+\bibliographystyle{plain}
+\bibliography{./bib/my_bibliography}
+\end{document}
